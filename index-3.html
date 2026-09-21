@@ -3,299 +3,932 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Kolapata Restaurant – fresh Bangladeshi and Indian food in Lisbon. View our full menu and contact us on WhatsApp.">
-<meta name="theme-color" content="#111111">
-<title>Kolapata Restaurant | Lisbon</title>
+
+<title>Kolapata Restaurant | Bangladeshi & Indian Restaurant in Lisbon</title>
+
+<meta name="description" content="Kolapata Restaurant - Fresh Bangladeshi and Indian food in Lisbon, Portugal. Visit us at Rua do Benformoso 147, Martim Moniz.">
+
 <style>
-:root{
-  --green:#9eea3a;
-  --gold:#ffb51b;
-  --cream:#fff7df;
-  --dark:#0d0d0d;
-  --card:#171717;
-  --muted:#cfcfcf;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
+
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-  margin:0;
-  font-family:Arial,Helvetica,sans-serif;
-  background:var(--dark);
-  color:#fff;
-  line-height:1.5;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0b0b0b;
+    color:#fff;
+    line-height:1.6;
 }
-a{text-decoration:none;color:inherit}
-.container{width:min(1180px,92%);margin:auto}
 
-/* Header */
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
 header{
-  position:sticky;top:0;z-index:50;
-  background:rgba(13,13,13,.96);
-  border-bottom:1px solid #292929;
-  backdrop-filter:blur(10px);
+    background:#050505;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:1px solid #292929;
 }
-.nav{
-  min-height:72px;display:flex;align-items:center;
-  justify-content:space-between;gap:20px;
-}
-.brand{
-  display:flex;align-items:center;gap:12px;
-  font-weight:900;letter-spacing:1px;
-}
-.logo-mark{
-  width:44px;height:44px;border:2px solid var(--gold);
-  border-radius:50%;display:grid;place-items:center;
-  color:var(--green);font-size:20px;font-weight:900;
-}
-.brand span{font-size:20px}
-nav{display:flex;gap:22px;align-items:center}
-nav a{color:#eee;font-weight:700;font-size:14px}
-nav a:hover{color:var(--gold)}
-.menu-btn{display:none;background:none;border:1px solid #444;color:#fff;border-radius:8px;padding:8px 10px;font-size:20px}
 
-/* Hero */
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#a7e63b;
+    letter-spacing:2px;
+}
+
+.logo span{
+    color:#ffbd20;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#b5ec45;
+}
+
 .hero{
-  padding:75px 0 65px;
-  text-align:center;
-  background:
-    radial-gradient(circle at 50% 20%,rgba(158,234,58,.12),transparent 35%),
-    radial-gradient(circle at 80% 80%,rgba(255,181,27,.10),transparent 30%);
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:80px 20px;
+    background:
+    linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.8)),
+    radial-gradient(circle at center,#263b08,#050505 70%);
 }
-.hero-badge{
-  display:inline-block;border:1px solid #3c3c3c;
-  border-radius:999px;padding:7px 15px;color:var(--gold);
-  font-size:13px;font-weight:800;margin-bottom:18px;
+
+.hero-content{
+    max-width:850px;
 }
+
 .hero h1{
-  margin:0;color:var(--green);font-size:clamp(42px,8vw,78px);
-  line-height:.95;letter-spacing:2px;
+    font-size:60px;
+    color:#a8e63d;
+    margin-bottom:15px;
+    letter-spacing:3px;
 }
-.hero .bn{
-  margin:14px 0 8px;color:var(--gold);
-  font-size:clamp(25px,4vw,40px);font-weight:900;
+
+.hero h2{
+    font-size:28px;
+    color:#ffc02b;
+    margin-bottom:20px;
 }
-.hero p{max-width:720px;margin:12px auto;color:#ddd;font-size:17px}
-.cta-row{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+
+.hero p{
+    font-size:19px;
+    color:#eee;
+    margin-bottom:30px;
+}
+
 .btn{
-  display:inline-flex;align-items:center;justify-content:center;
-  padding:13px 20px;border-radius:10px;font-weight:900;
-  border:1px solid #444;transition:.2s;
+    display:inline-block;
+    padding:14px 28px;
+    margin:7px;
+    border-radius:30px;
+    background:#a8e63d;
+    color:#111;
+    font-weight:bold;
+    transition:.3s;
 }
-.btn-primary{background:var(--gold);color:#111;border-color:var(--gold)}
-.btn-secondary{background:#191919}
-.btn:hover{transform:translateY(-2px)}
 
-/* Menu */
-section{padding:60px 0}
-.section-title{text-align:center;margin-bottom:35px}
-.section-title h2{font-size:38px;margin:0;color:var(--green)}
-.section-title p{color:var(--muted);margin:8px 0}
-.note{
-  max-width:900px;margin:0 auto 30px;
-  padding:13px 16px;border:1px solid #3c3c3c;
-  border-radius:10px;background:#151515;color:#eee;font-size:13px;
+.btn:hover{
+    transform:translateY(-2px);
+    background:#c5f76d;
 }
-.note strong{color:var(--gold)}
-.category{
-  margin:42px 0 18px;
-  color:var(--gold);font-size:25px;
-  border-left:4px solid var(--gold);padding-left:12px;
-}
-.grid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
-}
-.card{
-  background:var(--card);border:1px solid #292929;
-  border-radius:14px;padding:18px;
-  display:flex;justify-content:space-between;gap:14px;
-  min-height:120px;transition:.2s;
-}
-.card:hover{transform:translateY(-3px);border-color:#555}
-.number{
-  width:36px;height:36px;flex:none;border-radius:50%;
-  background:var(--gold);color:#111;
-  display:grid;place-items:center;font-weight:900;
-}
-.info{flex:1}
-.name{font-weight:900;font-size:17px;color:#fff}
-.desc{color:#bdbdbd;font-size:14px;margin-top:5px}
-.price{font-size:20px;font-weight:900;color:var(--green);white-space:nowrap}
 
-/* Contact */
-.contact-box{
-  background:linear-gradient(135deg,#171717,#111);
-  border:1px solid #333;border-radius:18px;padding:35px;
-  text-align:center;
+.btn.gold{
+    background:#ffbd20;
 }
-.contact-box h2{margin-top:0;color:var(--gold)}
-.contact-items{
-  display:flex;justify-content:center;gap:15px;flex-wrap:wrap;
-  margin:22px 0;
+
+section{
+    padding:70px 20px;
 }
-.contact-item{
-  padding:12px 16px;background:#1d1d1d;border-radius:10px;
-  border:1px solid #333;color:#eee;
+
+.container{
+    max-width:1150px;
+    margin:auto;
 }
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:38px;
+    color:#a8e63d;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:#ccc;
+}
+
+.about{
+    background:#111;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about-box{
+    background:#181818;
+    padding:30px;
+    border-radius:18px;
+    border:1px solid #292929;
+}
+
+.about-box h3{
+    color:#ffbd20;
+    font-size:27px;
+    margin-bottom:15px;
+}
+
+.about-box p{
+    color:#ddd;
+}
+
+.menu{
+    background:#080808;
+}
+
+.menu-category{
+    margin-bottom:45px;
+}
+
+.menu-category h3{
+    font-size:28px;
+    color:#ffbd20;
+    border-bottom:2px solid #a8e63d;
+    padding-bottom:10px;
+    margin-bottom:20px;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.menu-item{
+    background:#151515;
+    padding:18px;
+    border-radius:12px;
+    border:1px solid #292929;
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.menu-item h4{
+    color:#fff;
+    font-size:18px;
+}
+
+.menu-item p{
+    color:#aaa;
+    font-size:14px;
+}
+
+.price{
+    color:#a8e63d;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+.features{
+    background:#111;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.feature{
+    text-align:center;
+    background:#181818;
+    padding:30px 15px;
+    border-radius:15px;
+}
+
+.feature-icon{
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.feature h3{
+    color:#ffbd20;
+    margin-bottom:8px;
+}
+
+.feature p{
+    color:#bbb;
+    font-size:14px;
+}
+
+.contact{
+    background:#080808;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.contact-card{
+    background:#151515;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #292929;
+}
+
+.contact-card h3{
+    color:#ffbd20;
+    margin-bottom:15px;
+}
+
+.contact-card p{
+    color:#ddd;
+    margin-bottom:10px;
+}
+
+.map-btn{
+    display:inline-block;
+    margin-top:15px;
+    background:#a8e63d;
+    color:#111;
+    padding:12px 20px;
+    border-radius:25px;
+    font-weight:bold;
+}
+
 footer{
-  border-top:1px solid #292929;padding:28px 0;
-  text-align:center;color:#999;font-size:13px;
+    background:#030303;
+    padding:35px 20px;
+    text-align:center;
+    border-top:1px solid #222;
 }
 
-/* Mobile */
+footer .brand{
+    color:#a8e63d;
+    font-size:25px;
+    font-weight:bold;
+}
+
+footer p{
+    color:#888;
+    margin-top:8px;
+}
+
 @media(max-width:800px){
-  nav{display:none}
-  .menu-btn{display:block}
-  .grid{grid-template-columns:1fr}
-  .hero{padding:55px 0}
-  section{padding:45px 0}
+
+    nav{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .hero h2{
+        font-size:22px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .menu-grid{
+        grid-template-columns:1fr;
+    }
+
+    .feature-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:500px){
+
+    .hero{
+        min-height:75vh;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:55px 15px;
+    }
 }
 </style>
 </head>
 
 <body>
+
 <header>
-  <div class="container nav">
-    <a class="brand" href="#home" aria-label="Kolapata Restaurant home">
-      <div class="logo-mark">K</div>
-      <span>KOLAPATA RESTAURANT</span>
-    </a>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#menu">Full Menu</a>
-      <a href="#contact">Contact</a>
-      <a href="https://wa.me/351920444979" target="_blank" rel="noopener">WhatsApp</a>
-    </nav>
-    <button class="menu-btn" onclick="toggleNav()" aria-label="Open menu">☰</button>
-  </div>
+<div class="navbar">
+
+<div class="logo">
+KOLA<span>PATA</span>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#menu">Menu</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
 </header>
 
-<main>
+
+<!-- HERO -->
+
 <section class="hero" id="home">
-  <div class="container">
-    <div class="hero-badge">BANGLADESHI &amp; INDIAN CUISINE • LISBON</div>
-    <h1>KOLAPATA</h1>
-    <div class="bn">কলাপাতা রেস্টুরেন্ট</div>
-    <p>Fresh food, generous portions and the flavours we love. Explore our full menu below.</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#menu">🍛 View Full Menu</a>
-      <a class="btn btn-secondary" href="https://wa.me/351920444979" target="_blank" rel="noopener">💬 WhatsApp +351 920 444 979</a>
-    </div>
-  </div>
-</section>
 
-<section id="menu">
-<div class="container">
-  <div class="section-title">
-    <h2>Full Menu</h2>
-    <p>40 dishes and menu items</p>
-  </div>
+<div class="hero-content">
 
-  <div class="note">
-    <strong>Food image note:</strong> All food images may differ in appearance from the actual dishes. Thank you!<br>
-    Todas as imagens dos alimentos podem ter um aspeto diferente dos pratos reais. Obrigado!
-  </div>
+<h1>KOLAPATA</h1>
 
-  <h3 class="category">Beef &amp; Lamb</h3>
-  <div class="grid">
-    <article class="card"><div class="number">1</div><div class="info"><div class="name">Beef / Lamb Curry</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€6.00</div></article>
-    <article class="card"><div class="number">2</div><div class="info"><div class="name">Beef / Lamb Bhuna</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€7.00</div></article>
-    <article class="card"><div class="number">3</div><div class="info"><div class="name">Beef Mushroom</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€9.00</div></article>
-    <article class="card"><div class="number">4</div><div class="info"><div class="name">Beef Malai Curry</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€9.00</div></article>
-    <article class="card"><div class="number">5</div><div class="info"><div class="name">Beef Khala Bhuna</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€7.00</div></article>
-    <article class="card"><div class="number">6</div><div class="info"><div class="name">Lamb / Beef Saag</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€8.00</div></article>
-    <article class="card"><div class="number">7</div><div class="info"><div class="name">Beef / Lamb Dal</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€7.00</div></article>
-    <article class="card"><div class="number">8</div><div class="info"><div class="name">Beef / Lamb Biryani</div><div class="desc">+ Coke</div></div><div class="price">€6.00</div></article>
-  </div>
+<h2>Bangladeshi & Indian Restaurant</h2>
 
-  <h3 class="category">Chicken</h3>
-  <div class="grid">
-    <article class="card"><div class="number">9</div><div class="info"><div class="name">Chicken Biryani</div><div class="desc">+ Coke</div></div><div class="price">€5.00</div></article>
-    <article class="card"><div class="number">10</div><div class="info"><div class="name">Chicken Curry</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€5.00</div></article>
-    <article class="card"><div class="number">11</div><div class="info"><div class="name">Chicken Bhuna</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€6.00</div></article>
-    <article class="card"><div class="number">12</div><div class="info"><div class="name">Chicken Saag</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€7.00</div></article>
-    <article class="card"><div class="number">13</div><div class="info"><div class="name">Chicken Malai Curry</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€9.00</div></article>
-    <article class="card"><div class="number">14</div><div class="info"><div class="name">Chicken Mushroom</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€9.00</div></article>
-    <article class="card"><div class="number">15</div><div class="info"><div class="name">Butter Chicken Curry</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€7.00</div></article>
-    <article class="card"><div class="number">16</div><div class="info"><div class="name">Garlic Chicken</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€7.00</div></article>
-    <article class="card"><div class="number">17</div><div class="info"><div class="name">Chicken Korma</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€8.00</div></article>
-    <article class="card"><div class="number">18</div><div class="info"><div class="name">Chicken Masala</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€8.00</div></article>
-    <article class="card"><div class="number">19</div><div class="info"><div class="name">2Pcs Tandoori Leg</div><div class="desc">+ 2 Naan</div></div><div class="price">€6.00</div></article>
-    <article class="card"><div class="number">20</div><div class="info"><div class="name">Mix Fruits Juice</div></div><div class="price">€2.90</div></article>
-  </div>
+<p>
+Authentic South Asian flavours in the heart of Lisbon.
+Fresh food, traditional recipes and generous portions.
+</p>
 
-  <h3 class="category">Vegetarian</h3>
-  <div class="grid">
-    <article class="card"><div class="number">21</div><div class="info"><div class="name">Chana Dal</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€5.00</div></article>
-    <article class="card"><div class="number">22</div><div class="info"><div class="name">Chana Masala</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€5.00</div></article>
-    <article class="card"><div class="number">23</div><div class="info"><div class="name">Mix Vegetable</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€5.00</div></article>
-    <article class="card"><div class="number">24</div><div class="info"><div class="name">Veg. + Chana Dal Mix</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€6.00</div></article>
-    <article class="card"><div class="number">25</div><div class="info"><div class="name">Matar Paneer</div><div class="desc">+ 2 Naan Bread</div></div><div class="price">€8.00</div></article>
-    <article class="card"><div class="number">26</div><div class="info"><div class="name">Paneer Masala</div><div class="desc">+ 2 Naan Bread</div></div><div class="price">€8.00</div></article>
-    <article class="card"><div class="number">27</div><div class="info"><div class="name">Paneer Bhuna</div><div class="desc">+ 2 Naan Bread</div></div><div class="price">€7.50</div></article>
-    <article class="card"><div class="number">28</div><div class="info"><div class="name">Palok Paneer</div><div class="desc">+ 2 Naan Bread</div></div><div class="price">€7.50</div></article>
-    <article class="card"><div class="number">29</div><div class="info"><div class="name">Palok Bhaji</div><div class="desc">+ 2 Naan / Rice</div></div><div class="price">€5.00</div></article>
-    <article class="card"><div class="number">30</div><div class="info"><div class="name">Broccoli Bhaji</div><div class="desc">+ 2 Naan Bread</div></div><div class="price">€7.00</div></article>
-  </div>
+<a class="btn" href="#menu">View Full Menu</a>
 
-  <h3 class="category">Prawn &amp; Seafood</h3>
-  <div class="grid">
-    <article class="card"><div class="number">31</div><div class="info"><div class="name">King Prawn Bhun</div><div class="desc">+ Rice</div></div><div class="price">€9.00</div></article>
-    <article class="card"><div class="number">32</div><div class="info"><div class="name">K. Prawn Saag Bhun</div><div class="desc">+ Rice</div></div><div class="price">€10.00</div></article>
-    <article class="card"><div class="number">33</div><div class="info"><div class="name">Shrimp Malai Curry</div><div class="desc">+ Rice</div></div><div class="price">€10.00</div></article>
-    <article class="card"><div class="number">34</div><div class="info"><div class="name">Garlic Shrimp</div><div class="desc">+ 1 Naan / Rice</div></div><div class="price">€12.00</div></article>
-    <article class="card"><div class="number">35</div><div class="info"><div class="name">Boal Fish Curry</div><div class="desc">1pcs + Rice</div></div><div class="price">€8.00</div></article>
-    <article class="card"><div class="number">36</div><div class="info"><div class="name">Rui Fish Saag</div><div class="desc">+ Rice</div></div><div class="price">€7.00</div></article>
-    <article class="card"><div class="number">37</div><div class="info"><div class="name">Kachki Fish</div><div class="desc">+ Rice</div></div><div class="price">€5.00</div></article>
-    <article class="card"><div class="number">38</div><div class="info"><div class="name">Rui Fish Curry</div><div class="desc">1pcs + Rice</div></div><div class="price">€5.00</div></article>
-  </div>
+<a class="btn gold"
+href="https://www.google.com/maps/search/?api=1&query=Rua+do+Benformoso+147+Lisboa"
+target="_blank">
+Find Us
+</a>
 
-  <h3 class="category">Naan &amp; Bread</h3>
-  <div class="grid">
-    <article class="card"><div class="number">39</div><div class="info"><div class="name">Naan Bread</div><div class="desc">1pcs</div></div><div class="price">€1.50</div></article>
-    <article class="card"><div class="number">40</div><div class="info"><div class="name">Garlic Naan</div><div class="desc">1pcs</div></div><div class="price">€2.00</div></article>
-  </div>
-
-  <div class="note" style="margin-top:28px"><strong>Important:</strong> Salad is not included with all dishes.</div>
 </div>
+
 </section>
 
-<section id="contact">
-  <div class="container">
-    <div class="contact-box">
-      <h2>Visit Kolapata Restaurant</h2>
-      <p>For reservations and enquiries, contact us on WhatsApp.</p>
-      <div class="contact-items">
-        <a class="contact-item" href="https://wa.me/351920444979" target="_blank" rel="noopener">💬 WhatsApp: +351 920 444 979</a>
-        <div class="contact-item">📍 Lisbon, Portugal</div>
-      </div>
-      <a class="btn btn-primary" href="https://wa.me/351920444979" target="_blank" rel="noopener">Message us on WhatsApp</a>
-    </div>
-  </div>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="section-title">
+<h2>About Kolapata</h2>
+<p>A taste of Bangladesh & South Asia in Lisbon</p>
+</div>
+
+<div class="about-grid">
+
+<div class="about-box">
+
+<h3>Welcome to Kolapata Restaurant</h3>
+
+<p>
+Kolapata Restaurant brings authentic Bangladeshi and Indian flavours
+to Lisbon. Our goal is simple: delicious food, generous portions and
+a warm restaurant experience for everyone.
+</p>
+
+<br>
+
+<p>
+From traditional rice dishes and curries to crispy snacks and
+street-food favourites, we prepare our food with care and traditional
+South Asian flavours.
+</p>
+
+</div>
+
+<div class="about-box">
+
+<h3>Why Kolapata?</h3>
+
+<p>✓ Freshly prepared food</p>
+<p>✓ Traditional Bangladeshi flavours</p>
+<p>✓ Indian & South Asian favourites</p>
+<p>✓ Affordable prices</p>
+<p>✓ Friendly service</p>
+<p>✓ Dine-in & takeaway</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
-</main>
+
+
+<!-- FEATURES -->
+
+<section class="features">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Our Promise</h2>
+<p>Simple food. Big flavour.</p>
+</div>
+
+<div class="feature-grid">
+
+<div class="feature">
+<div class="feature-icon">🍛</div>
+<h3>Authentic</h3>
+<p>Traditional South Asian recipes and flavours.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">🥘</div>
+<h3>Fresh</h3>
+<p>Food prepared with care and fresh ingredients.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">💰</div>
+<h3>Affordable</h3>
+<p>Great food at reasonable prices.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">❤️</div>
+<h3>Hospitality</h3>
+<p>A warm and welcoming restaurant experience.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MENU -->
+
+<section class="menu" id="menu">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Our Menu</h2>
+
+<p>
+Bangladeshi • Indian • South Asian
+</p>
+
+</div>
+
+
+<!-- STARTERS -->
+
+<div class="menu-category">
+
+<h3>🥟 Starters & Snacks</h3>
+
+<div class="menu-grid">
+
+<div class="menu-item">
+<div>
+<h4>Samosa</h4>
+<p>Crispy pastry filled with spiced potatoes.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Singara</h4>
+<p>Traditional Bangladeshi crispy snack.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Vegetable Samosa</h4>
+<p>Crispy pastry with vegetable filling.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Pakora</h4>
+<p>Crispy spiced vegetable fritters.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Chicken Pakora</h4>
+<p>Spiced crispy chicken pieces.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+</div>
+</div>
+
+
+<!-- RICE -->
+
+<div class="menu-category">
+
+<h3>🍚 Rice & Biryani</h3>
+
+<div class="menu-grid">
+
+<div class="menu-item">
+<div>
+<h4>Chicken Biryani</h4>
+<p>Fragrant basmati rice with spiced chicken.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Mutton Biryani</h4>
+<p>Traditional aromatic rice with tender mutton.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Beef Biryani</h4>
+<p>Flavourful basmati rice with spiced beef.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Vegetable Biryani</h4>
+<p>Aromatic rice with mixed vegetables.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Plain Rice</h4>
+<p>Steamed basmati rice.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+</div>
+</div>
+
+
+<!-- CURRY -->
+
+<div class="menu-category">
+
+<h3>🍛 Curries & Main Dishes</h3>
+
+<div class="menu-grid">
+
+<div class="menu-item">
+<div>
+<h4>Chicken Curry</h4>
+<p>Chicken cooked with traditional spices.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Chicken Tikka Masala</h4>
+<p>Grilled chicken in a rich spiced sauce.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Butter Chicken</h4>
+<p>Creamy tomato-based chicken curry.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Mutton Curry</h4>
+<p>Tender mutton cooked with aromatic spices.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Beef Curry</h4>
+<p>Slow-cooked beef with traditional spices.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Vegetable Curry</h4>
+<p>Seasonal vegetables with South Asian spices.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+</div>
+</div>
+
+
+<!-- TANDOORI -->
+
+<div class="menu-category">
+
+<h3>🔥 Tandoori & Grill</h3>
+
+<div class="menu-grid">
+
+<div class="menu-item">
+<div>
+<h4>Chicken Tikka</h4>
+<p>Marinated grilled chicken pieces.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Tandoori Chicken</h4>
+<p>Chicken marinated with aromatic spices.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Seekh Kebab</h4>
+<p>Seasoned minced meat grilled to perfection.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Mixed Grill</h4>
+<p>A selection of grilled South Asian favourites.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+</div>
+</div>
+
+
+<!-- BREAD -->
+
+<div class="menu-category">
+
+<h3>🫓 Bread</h3>
+
+<div class="menu-grid">
+
+<div class="menu-item">
+<div>
+<h4>Naan</h4>
+<p>Traditional soft Indian bread.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Garlic Naan</h4>
+<p>Naan with garlic and herbs.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Butter Naan</h4>
+<p>Soft naan finished with butter.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Paratha</h4>
+<p>Traditional layered flatbread.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+</div>
+</div>
+
+
+<!-- DRINKS -->
+
+<div class="menu-category">
+
+<h3>🥤 Drinks</h3>
+
+<div class="menu-grid">
+
+<div class="menu-item">
+<div>
+<h4>Mango Lassi</h4>
+<p>Refreshing traditional mango yogurt drink.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Sweet Lassi</h4>
+<p>Traditional sweet yogurt drink.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Soft Drinks</h4>
+<p>Selection of chilled soft drinks.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+<div class="menu-item">
+<div>
+<h4>Water</h4>
+<p>Still or sparkling.</p>
+</div>
+<span class="price">€</span>
+</div>
+
+</div>
+</div>
+
+
+<div style="text-align:center;margin-top:30px;">
+
+<p style="color:#aaa;">
+Prices may vary. Please ask our staff for the current menu and prices.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Visit Kolapata</h2>
+
+<p>Come and enjoy authentic South Asian food in Lisbon.</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<h3>📍 Our Location</h3>
+
+<p>
+<strong>Kolapata Restaurant</strong>
+</p>
+
+<p>
+Rua do Benformoso 147<br>
+1100-595 Lisboa<br>
+Portugal
+</p>
+
+<a class="map-btn"
+href="https://www.google.com/maps/search/?api=1&query=Rua+do+Benformoso+147+Lisboa"
+target="_blank">
+Open Google Maps
+</a>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>🍽️ Restaurant</h3>
+
+<p>
+Bangladeshi Food • Indian Food • South Asian Cuisine
+</p>
+
+<p>
+Dine-in • Takeaway
+</p>
+
+<p>
+For reservations, takeaway and other enquiries,
+please contact the restaurant directly.
+</p>
+
+<a class="map-btn" href="#menu">
+View Menu
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
 
 <footer>
-  <div class="container">
-    © <span id="year"></span> Kolapata Restaurant. All rights reserved.
-  </div>
+
+<div class="brand">KOLAPATA RESTAURANT</div>
+
+<p>
+Bangladeshi & Indian Restaurant in Lisbon
+</p>
+
+<p>
+© 2026 Kolapata Restaurant. All Rights Reserved.
+</p>
+
 </footer>
 
-<script>
-function toggleNav(){
-  const nav=document.querySelector('nav');
-  const visible=nav.style.display==='flex';
-  nav.style.display=visible?'none':'flex';
-  nav.style.position='absolute';
-  nav.style.top='72px';
-  nav.style.right='4%';
-  nav.style.flexDirection='column';
-  nav.style.alignItems='stretch';
-  nav.style.padding='14px';
-  nav.style.background='#171717';
-  nav.style.border='1px solid #333';
-  nav.style.borderRadius='12px';
-}
-document.getElementById('year').textContent=new Date().getFullYear();
-</script>
+
 </body>
 </html>
