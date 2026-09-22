@@ -1,1 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kolapata Restaurant</title>
 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+header {
+  background: #1f5c3a;
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 25px 15px;
+}
+
+h2 {
+  text-align: center;
+  color: #1f5c3a;
+  margin-top: 35px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.item {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.item-name {
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.price {
+  color: #1f5c3a;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.contact {
+  text-align: center;
+  background: #1f5c3a;
+  color: white;
+  padding: 30px 15px;
+  margin-top: 35px;
+}
+
+.whatsapp {
+  display: inline-block;
+  margin-top: 12px;
+  background: white;
+  color: #1f5c3a;
+  padding: 12px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  background: #eee;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Kolapata Restaurant</h1>
+  <p>Bangladeshi & Indian Cuisine</p>
+  <p>Lisbon, Portugal</p>
+</header>
+
+<div class="container">
+
+<h2>Our Menu</h2>
+
+<div class="menu">
+
+<div class="item">
+<span class="item-name">1. Beef / Lamb Curry + 2 Naan / Rice</span>
+<span class="price">€6.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">2. Chicken Curry + 2 Naan / Rice</span>
+<span class="price">€7.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">3. Chicken Biryani + Coke</span>
+<span class="price">€9.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">4. Chicken Malai Curry + 2 Naan / Rice</span>
+<span class="price">€7.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">5. Chicken Mushroom + 2 Naan / Rice</span>
+<span class="price">€8.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">6. Beef Khala Bhuna + 2 Naan / Rice</span>
+<span class="price">€7.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">7. Beef / Lamb Bhuna + 2 Naan / Rice</span>
+<span class="price">€6.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">8. Beef Mushroom + 2 Naan / Rice</span>
+<span class="price">€9.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">9. Beef Malai Curry + 2 Naan / Rice</span>
+<span class="price">€5.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">10. 2 Pcs Tandoori Leg + 2 Naan</span>
+<span class="price">€9.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">11. Mix Fruits Juice</span>
+<span class="price">€5.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">12. Lamb / Beef Saag + 2 Naan / Rice</span>
+<span class="price">€9.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">13. Beef / Lamb Dal + 2 Naan / Rice</span>
+<span class="price">€6.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">14. Beef / Lamb Biryani + Coke</span>
+<span class="price">€7.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">15. Chicken Bhuna + 2 Naan / Rice</span>
+<span class="price">€6.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">16. Chicken Saag + 2 Naan / Rice</span>
+<span class="price">€7.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">17. Butter Chicken Curry + 2 Naan / Rice</span>
+<span class="price">€7.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">18. Garlic Chicken + 2 Naan / Rice</span>
+<span class="price">€8.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">19. Chicken Korma + 2 Naan / Rice</span>
+<span class="price">€8.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">20. Chicken Masala + 2 Naan / Rice</span>
+<span class="price">€2.90</span>
+</div>
+
+<div class="item">
+<span class="item-name">21. Palok Bhaji + 2 Naan / Rice</span>
+<span class="price">€5.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">22. Veg. + Chana Dal Mix + 2 Naan / Rice</span>
+<span class="price">€5.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">23. K. Prawn Saag Bhun + Rice</span>
+<span class="price">€5.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">24. Kachki Fish + Rice</span>
+<span class="price">€5.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">25. Rui Fish Curry 1pcs + Rice</span>
+<span class="price">€8.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">26. Boal Fish Curry 1pcs + Rice</span>
+<span class="price">€8.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">27. Garlic Shrimp + 1 Naan / Rice</span>
+<span class="price">€7.50</span>
+</div>
+
+<div class="item">
+<span class="item-name">28. Rui Fish Saag + Rice</span>
+<span class="price">€7.50</span>
+</div>
+
+<div class="item">
+<span class="item-name">29. Broccoli Bhaji + 2 Naan Bread</span>
+<span class="price">€6.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">30. Garlic Naan 1 Pcs</span>
+<span class="price">€5.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">31. Chana Dal + 2 Naan / Rice</span>
+<span class="price">€10.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">32. Chana Masala + 2 Naan / Rice</span>
+<span class="price">€5.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">33. Mix Vegetable + 2 Naan / Rice</span>
+<span class="price">€12.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">34. Paneer Bhuna + 2 Naan Bread</span>
+<span class="price">€5.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">35. Palok Paneer + 2 Naan Bread</span>
+<span class="price">€9.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">36. Matar Paneer + 2 Naan Bread</span>
+<span class="price">€8.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">37. Paneer Masala + 2 Naan Bread</span>
+<span class="price">€1.50</span>
+</div>
+
+<div class="item">
+<span class="item-name">38. King Prawn Bhun + Rice</span>
+<span class="price">€10.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">39. Naan Bread 1 Pcs</span>
+<span class="price">€7.00</span>
+</div>
+
+<div class="item">
+<span class="item-name">40. Shrimp Malai Curry + Rice</span>
+<span class="price">€2.00</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="contact">
+  <h2 style="color:white;">Order / Contact</h2>
+  <p>WhatsApp: +351 920 444 979</p>
+
+  <a class="whatsapp"
+     href="https://wa.me/351920444979">
+     Order on WhatsApp
+  </a>
+
+  <p>Salad is not included with all dishes.</p>
+  <p>All food images may differ in appearance from the actual dishes.</p>
+</div>
+
+<footer>
+  © 2026 Kolapata Restaurant. All Rights Reserved.
+</footer>
+
+</body>
+</html>
